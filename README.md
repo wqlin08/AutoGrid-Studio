@@ -1,110 +1,98 @@
 # AutoGrid Studio
 
-AutoGrid Studio 是一款面向多图排版与标注场景的 macOS 桌面软件，适合把多张图片快速整理成统一风格的结果图、科研配图、拼版图和说明图。
+AutoGrid Studio is a desktop app for turning collections of images into clean, consistent figure layouts fast.
 
-当前版本：`1.2.1`
+It is built for workflows where you need to place multiple images into a structured grid, add labels, annotate key areas, and export polished results without fighting a general-purpose design tool.
 
-![images](img.jpg)
 
-## 软件定位
+## What It Does
 
-很多图像整理工作并不复杂，但很琐碎。
+AutoGrid Studio helps you create:
 
-当你需要把多张图片放进统一网格、给每个子图加标签、再补上一些箭头、矩形或文字说明时，传统流程往往要在通用设计软件里手工反复对齐、改字、调样式，既耗时也容易不一致。
+- multi-panel scientific figures
+- comparison layouts
+- result boards and summary images
+- annotated presentation graphics
+- reusable figure projects that can be edited later
 
-AutoGrid Studio 的设计目标，就是把这类“重复但高频”的工作变成一个更专注、更稳定的桌面工具：
+Instead of manually aligning elements over and over, you work in a layout-focused editor designed for repeatable image composition.
 
-- 让多图拼版更快完成
-- 让标签和样式更容易统一
-- 让标注对象的编辑更直观
-- 让工程可以保存下来，后续继续修改
+## Why AutoGrid Studio
 
-## 适用场景
+Most image layout tools are either too general or too manual for this kind of work.
 
-- 科研论文配图
-- 实验结果多图拼版
-- 图像对比展示
-- 数据可视化结果整理
-- 带标签和标注对象的说明图输出
-- 需要反复修改和导出的图像排版工作
+AutoGrid Studio focuses on the parts that matter most:
 
-## 设计初衷
+- fast multi-image grid composition
+- consistent panel labeling
+- simple annotation workflows
+- editable saved projects
+- reliable export for final delivery
 
-这个软件不是通用型设计工具，而是围绕“多图组织 + 标签同步 + 标注输出”这一类任务来设计的。
+## Key Features
 
-它更关注下面这些实际问题：
+- Import image and PDF assets
+- Build structured multi-image grid layouts
+- Adjust rows, columns, spacing, margins, order, and per-item scale
+- Create label groups with synchronized style and content rules
+- Add rectangles, ellipses, circles, lines, arrows, and text annotations
+- Use both global annotations and panel-specific annotations
+- Save projects as `.ags` files and continue editing later
+- Export to `PNG`, `JPG`, `TIFF`, and `PDF`
+- English and Chinese interface support
+- Available on macOS and Windows
 
-- 多张素材如何快速放入统一布局
-- 标签如何批量保持一致
-- 子图顺序和缩放如何快速调整
-- 全局标注和局部标注如何共存
-- 已做好的工程如何长期保存与复用
+## Download And Install
 
-因此，AutoGrid Studio 更强调结构化编辑，而不是自由画布式的无限制设计。
+Download the latest installer from the repository's Releases page:
 
-## 核心能力
+- macOS: download the macOS installer package from `Releases`
+- Windows: download the Windows installer package from `Releases`
 
-- 导入图片与 PDF 素材
-- 自动组织为多图网格布局
-- 调整行列数、间距、边距和子图顺序
-- 对单个子图设置独立缩放
-- 创建标签组并统一管理标签内容与样式
-- 支持自动序列标签与自定义文本标签
-- 批量同步标签位置、样式和文字规则
-- 添加矩形、椭圆、圆、直线、箭头、文本框等对象
-- 支持全局对象与子图对象两种归属方式
-- 导出为 `PNG`、`JPG`、`TIFF`、`PDF`
-- 保存与打开工程文件，便于后续继续编辑
-- 提供中英文界面
+After downloading, open the installer and follow the standard installation steps for your platform.
 
-## 使用体验概览
+## Typical Use Cases
 
-AutoGrid Studio 的界面围绕一个典型工作流组织：
+- scientific paper figures
+- experimental result layouts
+- before/after comparisons
+- image collections with labels and callouts
+- presentation-ready research graphics
 
-- 左侧管理素材、标签组和对象列表
-- 中间是主画布，用来预览和直接操作排版结果
-- 右侧是属性区，用来细调布局、标签和对象参数
+## Project Files
 
-这样的结构适合连续工作：先导入素材，再整理布局，再统一标签，最后补充标注并导出。
+AutoGrid Studio uses the `.ags` project format to store:
 
-## 工程与文件
+- layout structure
+- imported asset references
+- label settings
+- annotation objects
+- project metadata
 
-软件使用 `.ags` 作为工程文件格式，用来保存当前排版状态、标签设置、对象信息和工程元数据。
+This makes it easy to come back to a figure and revise it later instead of rebuilding it from scratch.
 
-导出格式包括：
+## Export Formats
 
 - PNG
 - JPG
 - TIFF
 - PDF
 
-这让它既适合输出成最终成品，也适合保存为可继续编辑的工程。
+## Built For
 
-## 适合哪些用户
+- researchers
+- students and lab members
+- educators
+- creators who regularly assemble structured image layouts
+- anyone who wants a dedicated desktop tool for multi-image figure composition
 
-- 研究人员
-- 需要整理实验图的学生和老师
-- 经常制作拼版图或示意图的内容创作者
-- 希望在桌面端完成稳定重复排版工作的用户
+## Platform Support
 
-## 技术栈
+- macOS
+- Windows
 
-AutoGrid Studio 采用传统而稳定的桌面应用技术路线实现：
+## Summary
 
-- Java 17
-- JavaFX 17
-- Gradle
-- Jackson Databind
-- Apache PDFBox
+AutoGrid Studio is a focused desktop product for structured image layout, synchronized labeling, and annotation-based figure creation.
 
-## 平台说明
-
-Windows 和 macOS 均支持。
-
-## 软件特点总结
-
-- 面向真实多图排版场景，而不是通用绘图场景
-- 强调标签同步与批量一致性
-- 同时兼顾局部编辑与整体输出
-- 支持工程保存，适合持续迭代修改
-- 更适合科研配图、结果展示和结构化排版任务
+If your workflow depends on arranging many images into a polished, consistent final result, AutoGrid Studio is designed to make that process faster and easier.
